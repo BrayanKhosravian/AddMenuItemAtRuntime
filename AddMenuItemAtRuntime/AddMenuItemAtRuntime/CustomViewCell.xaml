@@ -9,14 +9,14 @@
              x:Name="Root">
 
     <Cell.ContextActions>
-        <ToolbarItem x:Name="AddToolBarItem"
-                     Text="Add" />
+        <ToolbarItem x:Name="Item" Text="Item" />
     </Cell.ContextActions>
 
     <ViewCell.View>
       <StackLayout Orientation="Horizontal">
           <Label Text="Hello Xamarin.Forms!" />
-          <Button Text="AddToolbarItem" Clicked="Button_OnClicked"/>
+          <Button Text="Add" Clicked="AddT_OnClicked"/>
+          <Button Text="Remove" Clicked="RemoveT_OnClicked"/>
       </StackLayout>
   </ViewCell.View>
 </ViewCell>

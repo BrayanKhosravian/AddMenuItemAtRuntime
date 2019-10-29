@@ -17,9 +17,15 @@ namespace AddMenuItemAtRuntime
 			InitializeComponent();
 		}
 
-		private void Button_OnClicked(object sender, EventArgs e)
+		private void AddT_OnClicked(object sender, EventArgs e)
 		{
-			Root.ContextActions.Add(AddToolBarItem);
+			Root.ContextActions.Add(Item);
+		}
+
+		private void RemoveT_OnClicked(object sender, EventArgs e)
+		{
+			if (Root.ContextActions.Contains(Item))
+				Root.ContextActions.Remove(Item);
 		}
 	}
 }
